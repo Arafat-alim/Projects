@@ -1,0 +1,63 @@
+body {
+  text-align: center;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: aqua;
+  font-size: 25px;
+}
+.game-board {
+  height: 350px;
+  width: 350px;
+  background-image: url("blackboard.jpg");
+  margin: auto;
+}
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 306px;
+  padding-left: 20px;
+  padding-top: 25px;
+}
+.sq0,
+.sq1,
+.sq6,
+.sq7 {
+  border-right: 2px solid white;
+}
+.sq3,
+.sq4 {
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.sq5 {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.cell {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 100px;
+  font-size: 50px;
+  font-family: "Permanent Marker", cursive;
+}
+.cell:hover {
+  background: aqua;
+  opacity: 0.4;
+}
+.game-restart {
+  font-weight: 400;
+  line-height: 1;
+  font-size: 1rem;
+  color: white;
+  background-color: deepskyblue;
+  border-color: white;
+  border: 1px solid;
+  border-radius: 0.2rem;
+  padding: 0.45rem 1.5rem;
+}
+.game-restart:hover {
+  background: darkblue;
+  opacity: 0.6;
+}
